@@ -16,6 +16,11 @@ class TGClient {
   async getChats() {
     return await this.client.getDialogs({});
   }
+
+  async getMessages(chatID: number, page: number = 1) {
+    let limit = 50;
+    return await this.client.getMessages(chatID, { limit, addOffset: limit * (page - 1) });
+  }
 }
 
 export default new TGClient();
