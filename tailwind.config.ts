@@ -7,8 +7,9 @@ const config: Config = {
 			colors: {
 				background: "#18191d",
 				foreground: "#282e33",
+				button: "#8d939e",
 				"foreground-highlight": "#353c43",
-				"button-background":"#fe0000"
+				"button-highlight": "#fe0800",
 			},
 		},
 	},
